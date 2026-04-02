@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biopunk 3077 Rulebook</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <aside class="toc">
+      <div class="toc__inner">
+        <p class="toc__eyebrow">BioPunk 3077</p>
+        <h1 class="toc__title">Rulebook</h1>
+        <p class="toc__summary">A compact web edition of the Cyberpunk RED biopunk module.</p>
+        <nav aria-label="Table of contents">
+          <a href="#overview" class="toc__link is-active">Overview</a>
+          <a href="#backgrounds" class="toc__link">Backgrounds</a>
+          <a href="#stats" class="toc__link">Reworked Stats</a>
+          <a href="#mutations" class="toc__link">Mutations</a>
+          <a href="#protocols" class="toc__link">Bio-Protocols</a>
+          <a href="#changes" class="toc__link">Important Changes</a>
+          <a href="#bioware" class="toc__link">Bioware</a>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section id="overview" class="panel hero">
+        <div class="hero__layout">
+          <div class="hero__copy">
+            <p class="eyebrow">a Cyberpunk RED Module</p>
+            <div class="hero__title-row">
+              <h2 class="hero__title">BIOPUNK <span>3077</span></h2>
+              <span class="version-tag">v 0.1</span>
+            </div>
+            <p class="hero__lede">They thought the future would be chrome. They were wrong.</p>
+          </div>
+          <div class="hero__art" aria-hidden="true"></div>
+        </div>
+        <div class="hero__body">
+          <p>Cyberware reached its limits. It was rigid, visible, and easy to control. Research turned inward, toward the body. Gene editing, adaptive tissue, and neural rewiring turned flesh into something programmable. Then it spread. Leaks and black markets pushed biotech into the streets. Biohackers and illegal clinics made it accessible, unstable, and powerful.</p>
+          <p>By 3077, biology and technology are no longer separate. Cyberware still exists, but it has been supplanted by bioware. The real edge comes from mutation, bio-protocols, and the ability to survive the strain. Power is no longer what you install. It is what you can endure.</p>
+        </div>
+      </section>
+
+      <section id="backgrounds" class="panel panel--art panel--art-backgrounds">
+        <div class="section-heading">
+          <p class="eyebrow">Character Creation</p>
+          <h2>Backgrounds</h2>
+        </div>
+        <p>This module does not use traditional Roles as in CPR. Characters are defined by their Background instead. A Background reflects prior experience, training, and social positioning, and grants <strong>+2 | +1 | +1</strong> across relevant skills.</p>
+        <p>Backgrounds are intentionally light-touch. They add flavour and a small mechanical edge without locking players into fixed archetypes.</p>
+        <p><strong>The backgrounds listed below are examples</strong> and can be expanded, remixed, or replaced to suit the campaign.</p>
+
+        <div class="background-grid">
+          <article class="background-card">
+            <h3>Street Rat</h3>
+            <p>+2 Stealth</p>
+            <p>+1 Athletics</p>
+            <p>+1 Perception</p>
+          </article>
+          <article class="background-card">
+            <h3>Clinic Escapee</h3>
+            <p>+2 Resist Torture/Drugs</p>
+            <p>+1 First Aid</p>
+            <p>+1 Perception</p>
+          </article>
+          <article class="background-card">
+            <h3>Corp Technician</h3>
+            <p>+2 Basic Tech</p>
+            <p>+1 Electronics/Security Tech</p>
+            <p>+1 Interface</p>
+          </article>
+          <article class="background-card">
+            <h3>Data Courier</h3>
+            <p>+2 Interface</p>
+            <p>+1 Athletics</p>
+            <p>+1 Concentration</p>
+          </article>
+          <article class="background-card">
+            <h3>Gang Enforcer</h3>
+            <p>+2 Brawling</p>
+            <p>+1 Melee Weapon</p>
+            <p>+1 Intimidation</p>
+          </article>
+          <article class="background-card">
+            <h3>Medtech Dropout</h3>
+            <p>+2 First Aid</p>
+            <p>+1 Paramedic</p>
+            <p>+1 Science (Biology)</p>
+          </article>
+          <article class="background-card">
+            <h3>Black Market Dealer</h3>
+            <p>+2 Trading</p>
+            <p>+1 Persuasion</p>
+            <p>+1 Human Perception</p>
+          </article>
+          <article class="background-card">
+            <h3>Ex-Netrunner</h3>
+            <p>+2 Interface</p>
+            <p>+1 Electronics/Security Tech</p>
+            <p>+1 Concentration</p>
+          </article>
+          <article class="background-card">
+            <h3>Nomad Drifter</h3>
+            <p>+2 Drive Land Vehicle</p>
+            <p>+1 Athletics</p>
+            <p>+1 Navigation</p>
+          </article>
+          <article class="background-card">
+            <h3>Cult Initiate</h3>
+            <p>+2 Concentration</p>
+            <p>+1 Persuasion</p>
+            <p>+1 Human Perception</p>
+          </article>
+          <article class="background-card">
+            <h3>Biohacker</h3>
+            <p>+2 Science (Biology)</p>
+            <p>+1 Basic Tech</p>
+            <p>+1 Electronics/Security Tech</p>
+          </article>
+          <article class="background-card">
+            <h3>Arena Fighter</h3>
+            <p>+2 Brawling</p>
+            <p>+1 Evasion</p>
+            <p>+1 Athletics</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="stats" class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">System Changes</p>
+          <h2>Reworked Stats</h2>
+        </div>
+
+        <div class="callout-grid">
+          <article class="callout">
+            <h3>New Stats</h3>
+            <p><strong>Affect</strong> and <strong>Fatigue</strong> are the major additions in this module. Affect handles emotional stability and social integration, while Fatigue tracks how much physical and neural strain a character can push through before collapsing with exhaustion.</p>
+          </article>
+        </div>
+
+        <div class="stats-divider" aria-hidden="true"></div>
+
+        <div class="stats-layout">
+          <section class="stat-block">
+            <h3>Primary Stats</h3>
+            <dl class="stats-list">
+              <div><dt>BODY</dt><dd>Physical power, resilience, and raw toughness.</dd></div>
+              <div><dt>REF</dt><dd>Response time and coordination, especially ranged combat accuracy.</dd></div>
+              <div><dt>DEX</dt><dd>Balance, athletic competence, jumping, and melee performance.</dd></div>
+              <div><dt>INT</dt><dd>Brightness, awareness, perception, and the ability to learn.</dd></div>
+              <div><dt>WILL</dt><dd>Determination, courage, stress tolerance, and endurance under deprivation.</dd></div>
+              <div><dt>TECH</dt><dd>Engineering mindset and applied technical knowledge.</dd></div>
+              <div><dt>AFFECT</dt><dd>Internal emotional stability plus outward relational capacity.</dd></div>
+              <div><dt>MOVE</dt><dd>Speed of movement: running, leaping, and swimming.</dd></div>
+            </dl>
+          </section>
+
+          <section class="stat-block">
+            <h3>Secondary Stats</h3>
+            <div class="secondary-stack">
+              <article class="secondary-card">
+                <h4>HP</h4>
+                <p class="secondary-card__formula"><code>(BODY + WILL) x 5</code></p>
+                <p>HP measures physical durability and overall survivability.</p>
+              </article>
+              <article class="secondary-card">
+                <h4>Humanity</h4>
+                <p class="secondary-card__formula"><code>AFFECT x 10</code></p>
+                <p>Humanity measures how well a character remains psychologically integrated under cyber- and bio-augmentation strain.</p>
+              </article>
+              <article class="secondary-card">
+                <h4>Fatigue</h4>
+                <p class="secondary-card__formula"><code>(BODY + WILL) / 2</code>, rounded down</p>
+                <p>Fatigue represents exertion, neural strain, and metabolic load. It powers Bio-Protocols and can also be spent to gain positive modifiers, effectively replacing the old Luck stat.</p>
+                <div class="secondary-card__detail">
+                  <h5>Fatigue States</h5>
+                  <ul>
+                    <li><strong>100% to 50%</strong>: Normal</li>
+                    <li><strong>49% to 1%</strong>: -1 to rolls</li>
+                    <li><strong>0</strong>: Cannot move and -2 to rolls</li>
+                  </ul>
+                </div>
+                <div class="secondary-card__detail">
+                  <h5>Fatigue Recovery</h5>
+                  <ul>
+                    <li><strong>Short rest (&lt;12 hours)</strong>: +2 FP</li>
+                    <li><strong>Full rest (&gt;12 hours)</strong>: Reset to full</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="mutations" class="panel panel--art panel--art-mutations">
+        <div class="section-heading">
+          <h2>Mutations</h2>
+        </div>
+
+        <div class="mutation-intro">
+          <div class="mutation-intro__copy">
+            <p>Characters can manipulate their bodies, minds, and surrounding biofields through <strong>Mutations</strong>: biological alterations driven by internal energy and augmentation.</p>
+            <p>To use Mutations, a character must have a dedicated gear item: the <strong>Bio-Core</strong>. Without a Bio-Core, mutation abilities and Bio-Protocols cannot be activated.</p>
+            <p>Mutations function like x2 skills. Bio-Protocols are specific techniques tied to each Mutation, similar to Martial Arts special moves. Unlike Martial Arts techniques, Bio-Protocols must be acquired through wet markets, narrative instruction, or other in-world access, and each use costs Fatigue Points.</p>
+          </div>
+        </div>
+
+        <div class="resolution-box">
+          <h3>Mutation Resolution</h3>
+          <p><code>1d10 + INT + SKILL vs DV 15</code></p>
+          <ul>
+            <li><strong>Success</strong>: The Mutation works.</li>
+            <li><strong>Failure</strong>: The Mutation fails, but the cost is still spent.</li>
+          </ul>
+        </div>
+
+        <div class="tier-grid">
+          <article class="tier-card">
+            <p class="tier-card__label">Tier 1</p>
+            <h3>Mutation Skill 0-5</h3>
+            <p>Basic effects with low cost, typically around 1-2 FP.</p>
+          </article>
+          <article class="tier-card">
+            <p class="tier-card__label">Tier 2</p>
+            <h3>Mutation Skill 6-8</h3>
+            <p>Stronger or area-based effects, typically around 3-4 FP.</p>
+          </article>
+          <article class="tier-card">
+            <p class="tier-card__label">Tier 3</p>
+            <h3>Mutation Skill 9+</h3>
+            <p>High-impact powers, action denial, and heavy buffs or debuffs at 5+ FP.</p>
+          </article>
+        </div>
+
+        <div class="section-heading section-heading--compact mutation-types-heading">
+          <h3>Mutation Types</h3>
+        </div>
+
+        <div class="mutation-grid">
+          <article class="mutation-card">
+            <h3>SOMA</h3>
+            <p class="mutation-card__subtitle">Body manipulation</p>
+            <ul>
+              <li>Damage such as bone spikes or plasma projection</li>
+              <li>Healing and cellular repair</li>
+              <li>Physical effects like armor, push, or growth</li>
+            </ul>
+          </article>
+          <article class="mutation-card">
+            <h3>NEURO</h3>
+            <p class="mutation-card__subtitle">Mind and nervous system</p>
+            <ul>
+              <li>Advantage or disadvantage effects</li>
+              <li>Stuns and confusion</li>
+              <li>Action denial and control pressure</li>
+            </ul>
+          </article>
+          <article class="mutation-card">
+            <h3>ECO</h3>
+            <p class="mutation-card__subtitle">Field, environment, and organisms</p>
+            <ul>
+              <li>Clouds, swarms, and zones</li>
+              <li>Area denial</li>
+              <li>Persistent battlefield effects</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="protocols" class="panel">
+        <div class="section-heading">
+          <h2>Bio-Protocols</h2>
+        </div>
+
+        <div class="protocol-layout">
+          <section class="protocol-spec">
+            <h3>Each Bio-Protocol Defines</h3>
+            <ul>
+              <li><strong>Type</strong>: SOMA, NEURO, or ECO</li>
+              <li><strong>Tier</strong>: 1, 2, or 3</li>
+              <li><strong>Delivery</strong>: Touch, Remote, Line, Cone, Sphere, Cube, Aura, or Glyph</li>
+              <li><strong>Cost</strong>: Fatigue spent</li>
+              <li><strong>Effect</strong>: Damage, healing, buff, debuff, or control</li>
+            </ul>
+          </section>
+
+          <section class="protocol-spec">
+            <h3>Delivery Keywords</h3>
+            <ul>
+              <li><strong>Touch</strong>: Single target in close range or self</li>
+              <li><strong>Remote</strong>: Single target at range</li>
+              <li><strong>Line</strong>: Straight area effect</li>
+              <li><strong>Cone</strong>: Directional area effect</li>
+              <li><strong>Sphere</strong>: Radius area effect</li>
+              <li><strong>Cube</strong>: Placed area</li>
+              <li><strong>Aura</strong>: Effect centered on self</li>
+              <li><strong>Glyph</strong>: Delayed trigger</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="protocol-showcase">
+          <section class="delivery-system">
+            <div class="section-heading section-heading--compact">
+              <h3>Delivery System</h3>
+            </div>
+            <p>Bio-Protocols are expressed through a delivery system that determines how the mutation reaches a target, occupies space, or persists in the environment.</p>
+            <figure class="delivery-system__figure">
+              <img src="Assets/delivery-system.png" alt="Diagram of Bio-Protocol delivery systems" class="delivery-system__image">
+            </figure>
+          </section>
+
+          <section class="protocol-examples">
+            <div class="section-heading section-heading--compact">
+              <h3>Examples</h3>
+            </div>
+            <div class="protocol-list" aria-label="Bio-protocol examples">
+              <details class="protocol-entry">
+                <summary class="protocol-entry__summary">
+                  <span class="protocol-entry__name">Hemo Spike</span>
+                  <span class="protocol-entry__chips"><span>T1</span><span>SOMA</span><span class="protocol-entry__delivery">Remote</span><span>2 FP</span></span>
+                </summary>
+                <div class="protocol-entry__body">
+                  <p class="protocol-entry__effect"><strong>Effect:</strong> 3d6 direct damage</p>
+                </div>
+              </details>
+              <details class="protocol-entry">
+                <summary class="protocol-entry__summary">
+                  <span class="protocol-entry__name">Neural Jam</span>
+                  <span class="protocol-entry__chips"><span>T1</span><span>NEURO</span><span class="protocol-entry__delivery">Remote</span><span>2 FP</span></span>
+                </summary>
+                <div class="protocol-entry__body">
+                  <p class="protocol-entry__effect"><strong>Effect:</strong> Target has disadvantage on next roll</p>
+                </div>
+              </details>
+              <details class="protocol-entry">
+                <summary class="protocol-entry__summary">
+                  <span class="protocol-entry__name">Adrenal Surge</span>
+                  <span class="protocol-entry__chips"><span>T1</span><span>NEURO</span><span class="protocol-entry__delivery">Aura</span><span>2 FP</span></span>
+                </summary>
+                <div class="protocol-entry__body">
+                  <p class="protocol-entry__effect"><strong>Effect:</strong> Gain advantage on next roll</p>
+                </div>
+              </details>
+              <details class="protocol-entry">
+                <summary class="protocol-entry__summary">
+                  <span class="protocol-entry__name">Bone Spear</span>
+                  <span class="protocol-entry__chips"><span>T2</span><span>SOMA</span><span class="protocol-entry__delivery">Remote</span><span>3 FP</span></span>
+                </summary>
+                <div class="protocol-entry__body">
+                  <p class="protocol-entry__effect"><strong>Effect:</strong> 4d6 direct damage</p>
+                </div>
+              </details>
+              <details class="protocol-entry">
+                <summary class="protocol-entry__summary">
+                  <span class="protocol-entry__name">Spore Cloud</span>
+                  <span class="protocol-entry__chips"><span>T2</span><span>ECO</span><span class="protocol-entry__delivery">Sphere (5m)</span><span>3 FP</span></span>
+                </summary>
+                <div class="protocol-entry__body">
+                  <p class="protocol-entry__effect"><strong>Effect:</strong> Area obscured; targets have disadvantage</p>
+                </div>
+              </details>
+              <details class="protocol-entry">
+                <summary class="protocol-entry__summary">
+                  <span class="protocol-entry__name">Kinetic Pulse</span>
+                  <span class="protocol-entry__chips"><span>T2</span><span>SOMA</span><span class="protocol-entry__delivery">Cone</span><span>3 FP</span></span>
+                </summary>
+                <div class="protocol-entry__body">
+                  <p class="protocol-entry__effect"><strong>Effect:</strong> Push targets; disadvantage on next roll</p>
+                </div>
+              </details>
+              <details class="protocol-entry">
+                <summary class="protocol-entry__summary">
+                  <span class="protocol-entry__name">Parasite Swarm</span>
+                  <span class="protocol-entry__chips"><span>T3</span><span>ECO</span><span class="protocol-entry__delivery">Sphere (5m)</span><span>4 FP</span></span>
+                </summary>
+                <div class="protocol-entry__body">
+                  <p class="protocol-entry__effect"><strong>Effect:</strong> 3d6 damage over 2 turns; disadvantage</p>
+                </div>
+              </details>
+              <details class="protocol-entry">
+                <summary class="protocol-entry__summary">
+                  <span class="protocol-entry__name">Neural Override</span>
+                  <span class="protocol-entry__chips"><span>T3</span><span>NEURO</span><span class="protocol-entry__delivery">Remote</span><span>4 FP</span></span>
+                </summary>
+                <div class="protocol-entry__body">
+                  <p class="protocol-entry__effect"><strong>Effect:</strong> Target loses next action on failed save</p>
+                </div>
+              </details>
+              <details class="protocol-entry">
+                <summary class="protocol-entry__summary">
+                  <span class="protocol-entry__name">Bio-Plasma Burst</span>
+                  <span class="protocol-entry__chips"><span>T3</span><span>SOMA</span><span class="protocol-entry__delivery">Sphere (5m)</span><span>5 FP</span></span>
+                </summary>
+                <div class="protocol-entry__body">
+                  <p class="protocol-entry__effect"><strong>Effect:</strong> 5d6 direct damage</p>
+                </div>
+              </details>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="changes" class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Setting Shifts</p>
+          <h2>Important Changes</h2>
+        </div>
+
+        <div class="callout-grid">
+          <article class="callout">
+            <h3>Netrunning</h3>
+            <p>Netrunning is no longer restricted to a specific Role. All characters can interact with systems using the <strong>Interface</strong> skill, now tied to <strong>TECH</strong>. To perform Interface actions, a character still needs a <strong>Cyberdeck</strong>. Interface is used for both NET Architecture access and QuickHacks.</p>
+          </article>
+          <article class="callout">
+            <h3>Bioware</h3>
+            <p>Instead of installing hardware, bioware rewrites tissue, organs, and genetic expression. Mechanically, though, it still follows standard cyberware rules for installation, effects, and Humanity cost.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="bioware" class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Augmentation</p>
+          <h2>Bioware</h2>
+        </div>
+        <p>This section is coming soon.</p>
+        <p>Future updates will cover bioware systems, examples, integration strain, and how biological augmentation fits into the wider BioPunk ruleset.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
