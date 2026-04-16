@@ -3,6 +3,7 @@ const sections = links
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
 const protocolEntries = [...document.querySelectorAll(".protocol-entry")];
+let printState = null;
 
 const setActiveLink = (id) => {
   for (const link of links) {
@@ -167,5 +168,72 @@ for (const entry of protocolEntries) {
     }
 
     await expandEntry(entry);
+  });
+}
+
+const openEntriesForPrint = () => {
+  if (printState) {
+    return;
+  }
+
+  printState = protocolEntries.map((entry) => ({
+    entry,
+    wasOpen: entry.open
+  }));
+
+  for (const { entry } of printState) {
+    const state = getAccordionState(entry);
+
+    if (state.animation) {
+      state.animation.cancel();
+    }
+
+    entry.open = true;
+    entry.style.height = "";
+
+    const body = entry.querySelector(".protocol-entry__body");
+    if (body) {
+      body.style.opacity = "";
+    }
+  }
+};
+
+const restoreEntriesAfterPrint = () => {
+  if (!printState) {
+    return;
+  }
+
+  for (const { entry, wasOpen } of printState) {
+    const state = getAccordionState(entry);
+
+    if (state.animation) {
+      state.animation.cancel();
+    }
+
+    entry.open = wasOpen;
+    entry.style.height = "";
+
+    const body = entry.querySelector(".protocol-entry__body");
+    if (body) {
+      body.style.opacity = "";
+    }
+  }
+
+  printState = null;
+};
+
+window.addEventListener("beforeprint", openEntriesForPrint);
+window.addEventListener("afterprint", restoreEntriesAfterPrint);
+
+const printMediaQuery = window.matchMedia("(print)");
+
+if (typeof printMediaQuery.addEventListener === "function") {
+  printMediaQuery.addEventListener("change", (event) => {
+    if (event.matches) {
+      openEntriesForPrint();
+      return;
+    }
+
+    restoreEntriesAfterPrint();
   });
 }
